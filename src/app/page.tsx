@@ -339,7 +339,7 @@ export default function Home() {
       {/* NFT Section */}
       <section className="bg-gradient-to-r from-purple-900 via-pink-600 to-yellow-400 py-16 px-6 text-white text-center">
         <h2 className="text-5xl font-extrabold mb-4 drop-shadow-lg">
-          Foofur NFT's
+          Foofur NFT&apos;s
         </h2>
         <p className="max-w-2xl mx-auto text-xl italic mb-12">
           Infinitely mintable JPEGs with zero meaning. Get yours today. Or
@@ -356,7 +356,7 @@ export default function Home() {
           </div>
         </div>
         <p className="text-sm text-yellow-100 mb-12">
-          Almost gone! (Just kidding. It's infinite.)
+          Almost gone! (Just kidding. It&apos;s infinite.)
         </p>
 
         <div className="flex flex-col md:flex-row gap-8 justify-center items-center">
