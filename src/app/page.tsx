@@ -12,13 +12,21 @@ export default function Home() {
         <div className="absolute inset-0 bg-black/40 backdrop-blur-sm"></div>
 
         <div className="z-10 relative w-full max-w-4xl px-4">
-          <Image
-            src="/foofur_logo.png"
-            alt="Foofur Logo"
-            width={700}
-            height={700}
-            className="mx-auto mb-6 shadow-3xl shadow-purple-600/70 transform transition-transform duration-500 hover:scale-110 rounded-full"
-          />
+          <div className="relative">
+            <div className="absolute inset-0 animate-sparkle">
+              <div className="absolute top-0 left-1/4 w-2 h-2 bg-yellow-400 rounded-full animate-sparkle-1"></div>
+              <div className="absolute top-1/4 right-1/4 w-2 h-2 bg-blue-400 rounded-full animate-sparkle-2"></div>
+              <div className="absolute bottom-1/4 left-1/3 w-2 h-2 bg-purple-400 rounded-full animate-sparkle-3"></div>
+              <div className="absolute top-1/2 right-1/3 w-2 h-2 bg-pink-400 rounded-full animate-sparkle-4"></div>
+            </div>
+            <Image
+              src="/foofur_logo.png"
+              alt="Foofur Logo"
+              width={700}
+              height={700}
+              className="mx-auto mb-6 shadow-[0_0_50px_rgba(147,51,234,0.7),0_0_100px_rgba(59,130,246,0.5)] transform transition-transform duration-500 hover:scale-110 rounded-full relative z-10"
+            />
+          </div>
           <h1 className="font-orbitron text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-bold mb-4 sm:mb-6 text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 animate-gradient-x">
             $FOOF
           </h1>
