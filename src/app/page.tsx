@@ -362,9 +362,11 @@ export default function Home() {
         <div className="flex flex-col md:flex-row gap-8 justify-center items-center">
           {/* NFT Card 1 */}
           <div className="bg-white text-black rounded-xl shadow-2xl p-6 w-80 transform hover:scale-105 transition">
-            <img
+            <Image
               src="/foofur_moon.png"
               alt="Moon Foofur NFT"
+              width={300}
+              height={300}
               className="rounded-lg mb-4 border-4 border-yellow-400"
             />
             <h3 className="text-2xl font-bold">#001 – Gangsta Fur</h3>
@@ -381,9 +383,11 @@ export default function Home() {
 
           {/* NFT Card 2 */}
           <div className="bg-white text-black rounded-xl shadow-2xl p-6 w-80 transform hover:rotate-1 transition">
-            <img
+            <Image
               src="/foofur_pizza.png"
               alt="Pizza Delivery Foofur NFT"
+              width={300}
+              height={300}
               className="rounded-lg mb-4 border-4 border-red-400"
             />
             <h3 className="text-2xl font-bold">#002 – Pizza Fur</h3>
