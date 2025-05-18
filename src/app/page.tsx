@@ -37,7 +37,7 @@ export default function Home() {
           {/* Dev Progress Section */}
           <div className="w-full max-w-2xl mx-auto bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 mb-8 border border-purple-500/20">
             <h3 className="text-xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">
-              Dev's Progress to Lambo 🚀
+              Dev&apos;s Progress to Lambo ��
             </h3>
 
             {/* FOOF Holdings */}
@@ -414,10 +414,12 @@ export default function Home() {
             {/* Profile 1 */}
             <div className="bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 border border-purple-500/20 hover:border-purple-500/50 transition-all duration-300">
               <div className="flex items-center gap-4 mb-4">
-                <img
+                <Image
                   src="/spinner.png"
                   alt="Profile 1"
-                  className="w-16 h-16 rounded-full border-2 border-purple-500"
+                  width={64}
+                  height={64}
+                  className="rounded-full border-2 border-purple-500"
                 />
                 <div>
                   <h4 className="text-xl font-bold text-purple-400">
@@ -447,10 +449,12 @@ export default function Home() {
             {/* Profile 2 */}
             <div className="bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 border border-pink-500/20 hover:border-pink-500/50 transition-all duration-300">
               <div className="flex items-center gap-4 mb-4">
-                <img
+                <Image
                   src="/anabel.png"
                   alt="Profile 2"
-                  className="w-16 h-16 rounded-full border-2 border-pink-500"
+                  width={64}
+                  height={64}
+                  className="rounded-full border-2 border-pink-500"
                 />
                 <div>
                   <h4 className="text-xl font-bold text-pink-400">0xRUGGED</h4>
@@ -475,10 +479,12 @@ export default function Home() {
             {/* Profile 3 */}
             <div className="bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 border border-yellow-500/20 hover:border-yellow-500/50 transition-all duration-300">
               <div className="flex items-center gap-4 mb-4">
-                <img
+                <Image
                   src="/hazel.png"
                   alt="Profile 3"
-                  className="w-16 h-16 rounded-full border-2 border-yellow-500"
+                  width={64}
+                  height={64}
+                  className="rounded-full border-2 border-yellow-500"
                 />
                 <div>
                   <h4 className="text-xl font-bold text-yellow-400">
@@ -510,8 +516,8 @@ export default function Home() {
               Coming Soon: Wallet Wars
             </p>
             <p className="text-sm text-gray-400 mt-2">
-              Where wallets battle for the title of "Most Pointless JPEG
-              Collection"
+              Where wallets battle for the title of &quot;Most Pointless JPEG
+              Collection&quot;
             </p>
             <div className="mt-4 flex justify-center gap-4">
               <span className="text-xs text-gray-500">⚔️ Epic Battles</span>
