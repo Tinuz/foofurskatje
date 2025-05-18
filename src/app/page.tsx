@@ -12,6 +12,13 @@ export default function Home() {
         <div className="absolute inset-0 bg-black/40 backdrop-blur-sm"></div>
 
         <div className="z-10 relative w-full max-w-4xl px-4">
+          <Image
+            src="/foofur_logo.png"
+            alt="Foofur Logo"
+            width={300}
+            height={300}
+            className="mx-auto mb-6"
+          />
           <h1 className="font-orbitron text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-bold mb-4 sm:mb-6 text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 animate-gradient-x">
             $FOOF
           </h1>
@@ -189,7 +196,7 @@ export default function Home() {
               </p>
             </div>
             <button className="w-full sm:w-auto bg-gradient-to-r from-green-400 via-teal-500 to-cyan-500 hover:from-green-500 hover:via-teal-600 hover:to-cyan-600 text-gray-900 font-bold py-3 sm:py-4 px-6 sm:px-10 rounded-full text-lg sm:text-xl transition-all shadow-lg hover:scale-105 active:scale-95 hover:shadow-teal-500/50">
-              Stake Now (Don't Expect Anything)
+              Stake Now (Don&apos;t Expect Anything)
             </button>
           </div>
         </div>
