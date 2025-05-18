@@ -11,38 +11,30 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-r from-purple-500/20 via-blue-500/20 to-pink-500/20 animate-gradient-x"></div>
         <div className="absolute inset-0 bg-black/40 backdrop-blur-sm"></div>
 
-        <div className="z-10 relative w-full max-w-4xl px-4">
-          <div className="relative">
-            <div className="absolute inset-0 animate-sparkle">
-              <div className="absolute top-0 left-1/4 w-2 h-2 bg-yellow-400 rounded-full animate-sparkle-1"></div>
-              <div className="absolute top-1/4 right-1/4 w-2 h-2 bg-blue-400 rounded-full animate-sparkle-2"></div>
-              <div className="absolute bottom-1/4 left-1/3 w-2 h-2 bg-purple-400 rounded-full animate-sparkle-3"></div>
-              <div className="absolute top-1/2 right-1/3 w-2 h-2 bg-pink-400 rounded-full animate-sparkle-4"></div>
-            </div>
-            <Image
-              src="/foofur_logo.png"
-              alt="Foofur Logo"
-              width={700}
-              height={700}
-              className="mx-auto mb-6 shadow-[0_0_50px_rgba(147,51,234,0.7),0_0_100px_rgba(59,130,246,0.5)] transform transition-transform duration-500 hover:scale-110 rounded-full relative z-10"
-            />
-          </div>
-          <h1 className="font-orbitron text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-bold mb-4 sm:mb-6 text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 animate-gradient-x">
+        <div className="z-10 relative w-full max-w-4xl px-2 sm:px-4">
+          <Image
+            src="/foofur_logo.png"
+            alt="Foofur Logo"
+            width={700}
+            height={700}
+            className="mx-auto mb-4 sm:mb-6 shadow-[0_0_50px_rgba(147,51,234,0.7),0_0_100px_rgba(59,130,246,0.5)] transform transition-transform duration-500 hover:scale-110 rounded-full relative z-10 w-[200px] sm:w-[300px] md:w-[400px] lg:w-[500px]"
+          />
+          <h1 className="font-orbitron text-4xl sm:text-7xl md:text-8xl lg:text-9xl font-bold mb-4 sm:mb-6 text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 animate-gradient-x">
             $FOOF
           </h1>
-          <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl mb-6 sm:mb-10 text-gray-300 drop-shadow-lg">
+          <p className="text-base sm:text-xl md:text-2xl lg:text-3xl mb-4 sm:mb-10 text-gray-300 drop-shadow-lg">
             The Future of Absolutely Nothing
           </p>
 
           {/* Dev Progress Section */}
-          <div className="w-full max-w-2xl mx-auto bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 mb-8 border border-purple-500/20">
-            <h3 className="text-xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">
-              Dev&apos;s Progress to Lambo ��
+          <div className="w-full max-w-2xl mx-auto bg-gray-800/50 backdrop-blur-sm rounded-xl p-4 sm:p-6 mb-6 sm:mb-8 border border-purple-500/20">
+            <h3 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">
+              Dev&apos;s Progress to Lambo 🚀
             </h3>
 
             {/* FOOF Holdings */}
-            <div className="mb-4">
-              <div className="flex justify-between text-sm mb-1">
+            <div className="mb-3 sm:mb-4">
+              <div className="flex justify-between text-xs sm:text-sm mb-1">
                 <span className="text-gray-400">$FOOF Holdings</span>
                 <span className="text-green-400 font-mono">69,420,000,000</span>
               </div>
@@ -55,8 +47,8 @@ export default function Home() {
             </div>
 
             {/* Current Price */}
-            <div className="mb-4">
-              <div className="flex justify-between text-sm mb-1">
+            <div className="mb-3 sm:mb-4">
+              <div className="flex justify-between text-xs sm:text-sm mb-1">
                 <span className="text-gray-400">Current Price</span>
                 <span className="text-yellow-400 font-mono">$0.0000000001</span>
               </div>
@@ -70,7 +62,7 @@ export default function Home() {
 
             {/* Lambo Progress */}
             <div className="mb-2">
-              <div className="flex justify-between text-sm mb-1">
+              <div className="flex justify-between text-xs sm:text-sm mb-1">
                 <span className="text-gray-400">Progress to Lambo</span>
                 <span className="text-red-400 font-mono">0.0001%</span>
               </div>
@@ -81,23 +73,23 @@ export default function Home() {
                 ></div>
               </div>
             </div>
-            <p className="text-xs text-gray-500 italic text-right">
+            <p className="text-[10px] sm:text-xs text-gray-500 italic text-right">
               Target: 1 Lamborghini Aventador ($500,000)
             </p>
           </div>
 
           {/* Call to Action Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center mb-6 sm:mb-8">
             <a
               href="https://jup.ag/swap/SOL-FOOF"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full sm:w-auto bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500 hover:from-yellow-500 hover:via-orange-600 hover:to-red-600 text-gray-900 font-bold py-3 sm:py-4 px-6 sm:px-12 rounded-full text-lg sm:text-xl uppercase tracking-wide shadow-lg transform transition-all duration-300 hover:scale-105 active:scale-95 hover:shadow-orange-500/50 flex items-center justify-center gap-2"
+              className="w-full sm:w-auto bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500 hover:from-yellow-500 hover:via-orange-600 hover:to-red-600 text-gray-900 font-bold py-2 sm:py-3 px-4 sm:px-8 rounded-full text-base sm:text-lg uppercase tracking-wide shadow-lg transform transition-all duration-300 hover:scale-105 active:scale-95 hover:shadow-orange-500/50 flex items-center justify-center gap-2"
             >
               <span>Buy $FOOF</span>
               <span className="text-sm">🚀</span>
             </a>
-            <button className="w-full sm:w-auto bg-gradient-to-r from-green-400 via-teal-500 to-cyan-500 hover:from-green-500 hover:via-teal-600 hover:to-cyan-600 text-gray-900 font-bold py-3 sm:py-4 px-6 sm:px-12 rounded-full text-lg sm:text-xl uppercase tracking-wide shadow-lg transform transition-all duration-300 hover:scale-105 active:scale-95 hover:shadow-cyan-500/50">
+            <button className="w-full sm:w-auto bg-gradient-to-r from-green-400 via-teal-500 to-cyan-500 hover:from-green-500 hover:via-teal-600 hover:to-cyan-600 text-gray-900 font-bold py-2 sm:py-3 px-4 sm:px-8 rounded-full text-base sm:text-lg uppercase tracking-wide shadow-lg transform transition-all duration-300 hover:scale-105 active:scale-95 hover:shadow-cyan-500/50">
               Stake for Nothing
             </button>
           </div>
@@ -337,113 +329,115 @@ export default function Home() {
       </section>
 
       {/* NFT Section */}
-      <section className="bg-gradient-to-r from-purple-900 via-pink-600 to-yellow-400 py-16 px-6 text-white text-center">
-        <h2 className="text-5xl font-extrabold mb-4 drop-shadow-lg">
+      <section className="bg-gradient-to-r from-purple-900 via-pink-600 to-yellow-400 py-12 sm:py-16 px-4 sm:px-6 text-white text-center">
+        <h2 className="text-3xl sm:text-5xl font-extrabold mb-3 sm:mb-4 drop-shadow-lg">
           Foofur NFT&apos;s
         </h2>
-        <p className="max-w-2xl mx-auto text-xl italic mb-12">
+        <p className="max-w-2xl mx-auto text-base sm:text-xl italic mb-8 sm:mb-12">
           Infinitely mintable JPEGs with zero meaning. Get yours today. Or
           tomorrow. Or whenever.
         </p>
 
         {/* Fake Progress Bar */}
-        <div className="max-w-xl mx-auto bg-black rounded-full p-1 mb-6">
+        <div className="max-w-xl mx-auto bg-black rounded-full p-1 mb-4 sm:mb-6">
           <div
-            className="bg-green-400 h-6 rounded-full text-black text-sm font-bold flex items-center justify-center animate-pulse"
+            className="bg-green-400 h-4 sm:h-6 rounded-full text-black text-xs sm:text-sm font-bold flex items-center justify-center animate-pulse"
             style={{ width: "98%" }}
           >
             9,876,321 / ∞ Minted
           </div>
         </div>
-        <p className="text-sm text-yellow-100 mb-12">
+        <p className="text-xs sm:text-sm text-yellow-100 mb-8 sm:mb-12">
           Almost gone! (Just kidding. It&apos;s infinite.)
         </p>
 
-        <div className="flex flex-col md:flex-row gap-8 justify-center items-center">
+        <div className="flex flex-col md:flex-row gap-6 sm:gap-8 justify-center items-center">
           {/* NFT Card 1 */}
-          <div className="bg-white text-black rounded-xl shadow-2xl p-6 w-80 transform hover:scale-105 transition">
+          <div className="bg-white text-black rounded-xl shadow-2xl p-4 sm:p-6 w-full sm:w-80 transform hover:scale-105 transition">
             <Image
               src="/foofur_moon.png"
               alt="Moon Foofur NFT"
               width={300}
               height={300}
-              className="rounded-lg mb-4 border-4 border-yellow-400"
+              className="rounded-lg mb-3 sm:mb-4 border-4 border-yellow-400 w-full h-auto"
             />
-            <h3 className="text-2xl font-bold">#001 – Gangsta Fur</h3>
-            <p className="mt-2 text-sm italic">
+            <h3 className="text-xl sm:text-2xl font-bold">
+              #001 – Gangsta Fur
+            </h3>
+            <p className="mt-2 text-xs sm:text-sm italic">
               Own it. Flex it. It still does nothing.
             </p>
-            <button className="mt-4 px-4 py-2 bg-yellow-400 text-black font-bold rounded-full hover:bg-yellow-300 transition">
+            <button className="mt-3 sm:mt-4 px-3 sm:px-4 py-2 bg-yellow-400 text-black font-bold rounded-full hover:bg-yellow-300 transition text-sm sm:text-base">
               Mint for 69 SOL
             </button>
-            <p className="mt-2 text-xs text-gray-600">
+            <p className="mt-2 text-[10px] sm:text-xs text-gray-600">
               No perks. No roadmap. Just vibes.
             </p>
           </div>
 
           {/* NFT Card 2 */}
-          <div className="bg-white text-black rounded-xl shadow-2xl p-6 w-80 transform hover:rotate-1 transition">
+          <div className="bg-white text-black rounded-xl shadow-2xl p-4 sm:p-6 w-full sm:w-80 transform hover:rotate-1 transition">
             <Image
               src="/foofur_pizza.png"
               alt="Pizza Delivery Foofur NFT"
               width={300}
               height={300}
-              className="rounded-lg mb-4 border-4 border-red-400"
+              className="rounded-lg mb-3 sm:mb-4 border-4 border-red-400 w-full h-auto"
             />
-            <h3 className="text-2xl font-bold">#002 – Pizza Fur</h3>
-            <p className="mt-2 text-sm italic">
+            <h3 className="text-xl sm:text-2xl font-bold">#002 – Pizza Fur</h3>
+            <p className="mt-2 text-xs sm:text-sm italic">
               So rare. So jpeg. So... pointless.
             </p>
-            <button className="mt-4 px-4 py-2 bg-red-400 text-black font-bold rounded-full hover:bg-red-300 transition">
+            <button className="mt-3 sm:mt-4 px-3 sm:px-4 py-2 bg-red-400 text-black font-bold rounded-full hover:bg-red-300 transition text-sm sm:text-base">
               Mint for 420 BONK
             </button>
-            <p className="mt-2 text-xs text-gray-600">
+            <p className="mt-2 text-[10px] sm:text-xs text-gray-600">
               No Discord role. No utility. No future.
             </p>
           </div>
         </div>
 
-        <p className="mt-16 text-sm italic text-yellow-100 max-w-xl mx-auto">
+        <p className="mt-12 sm:mt-16 text-xs sm:text-sm italic text-yellow-100 max-w-xl mx-auto">
           Disclaimer: These NFTs are infinite. Their value is not. Minting one
           is a spiritual journey with absolutely no destination.
         </p>
 
         {/* Wallet Profiles Section */}
-        <div className="mt-20">
-          <h3 className="text-3xl font-bold mb-8 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-400 to-yellow-400">
+        <div className="mt-16 sm:mt-20">
+          <h3 className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-400 to-yellow-400">
             Legendary Wallet Warriors
           </h3>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
             {/* Profile 1 */}
-            <div className="bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 border border-purple-500/20 hover:border-purple-500/50 transition-all duration-300">
-              <div className="flex items-center gap-4 mb-4">
+            <div className="bg-gray-800/50 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-purple-500/20 hover:border-purple-500/50 transition-all duration-300">
+              <div className="flex items-center gap-3 sm:gap-4 mb-3 sm:mb-4">
                 <Image
                   src="/spinner.png"
                   alt="Profile 1"
                   width={64}
                   height={64}
-                  className="rounded-full border-2 border-purple-500"
+                  className="rounded-full border-2 border-purple-500 w-12 h-12 sm:w-16 sm:h-16"
                 />
                 <div>
-                  <h4 className="text-xl font-bold text-purple-400">
+                  <h4 className="text-lg sm:text-xl font-bold text-purple-400">
                     0xWOOF69
                   </h4>
-                  <p className="text-sm text-gray-400">
+                  <p className="text-xs sm:text-sm text-gray-400">
                     The Dark Knight of Degen
                   </p>
                 </div>
               </div>
-              <div className="space-y-2">
-                <p className="text-sm text-gray-300">
+              <div className="space-y-1 sm:space-y-2">
+                <p className="text-xs sm:text-sm text-gray-300">
                   NFTs Minted:{" "}
                   <span className="text-purple-400 font-mono">420,069</span>
                 </p>
-                <p className="text-sm text-gray-300">
+                <p className="text-xs sm:text-sm text-gray-300">
                   Last Mint:{" "}
                   <span className="text-purple-400">2 minutes ago</span>
                 </p>
-                <p className="text-sm text-gray-300">
+                <p className="text-xs sm:text-sm text-gray-300">
                   Status:{" "}
                   <span className="text-green-400">Still Breathing</span>
                 </p>
@@ -451,29 +445,33 @@ export default function Home() {
             </div>
 
             {/* Profile 2 */}
-            <div className="bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 border border-pink-500/20 hover:border-pink-500/50 transition-all duration-300">
-              <div className="flex items-center gap-4 mb-4">
+            <div className="bg-gray-800/50 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-pink-500/20 hover:border-pink-500/50 transition-all duration-300">
+              <div className="flex items-center gap-3 sm:gap-4 mb-3 sm:mb-4">
                 <Image
                   src="/anabel.png"
                   alt="Profile 2"
                   width={64}
                   height={64}
-                  className="rounded-full border-2 border-pink-500"
+                  className="rounded-full border-2 border-pink-500 w-12 h-12 sm:w-16 sm:h-16"
                 />
                 <div>
-                  <h4 className="text-xl font-bold text-pink-400">0xRUGGED</h4>
-                  <p className="text-sm text-gray-400">The Joker of JPEGs</p>
+                  <h4 className="text-lg sm:text-xl font-bold text-pink-400">
+                    0xRUGGED
+                  </h4>
+                  <p className="text-xs sm:text-sm text-gray-400">
+                    The Joker of JPEGs
+                  </p>
                 </div>
               </div>
-              <div className="space-y-2">
-                <p className="text-sm text-gray-300">
+              <div className="space-y-1 sm:space-y-2">
+                <p className="text-xs sm:text-sm text-gray-300">
                   NFTs Minted:{" "}
                   <span className="text-pink-400 font-mono">1,337,420</span>
                 </p>
-                <p className="text-sm text-gray-300">
+                <p className="text-xs sm:text-sm text-gray-300">
                   Last Mint: <span className="text-pink-400">Just now</span>
                 </p>
-                <p className="text-sm text-gray-300">
+                <p className="text-xs sm:text-sm text-gray-300">
                   Status:{" "}
                   <span className="text-yellow-400">Probably Insane</span>
                 </p>
@@ -481,33 +479,33 @@ export default function Home() {
             </div>
 
             {/* Profile 3 */}
-            <div className="bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 border border-yellow-500/20 hover:border-yellow-500/50 transition-all duration-300">
-              <div className="flex items-center gap-4 mb-4">
+            <div className="bg-gray-800/50 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-yellow-500/20 hover:border-yellow-500/50 transition-all duration-300">
+              <div className="flex items-center gap-3 sm:gap-4 mb-3 sm:mb-4">
                 <Image
                   src="/hazel.png"
                   alt="Profile 3"
                   width={64}
                   height={64}
-                  className="rounded-full border-2 border-yellow-500"
+                  className="rounded-full border-2 border-yellow-500 w-12 h-12 sm:w-16 sm:h-16"
                 />
                 <div>
-                  <h4 className="text-xl font-bold text-yellow-400">
+                  <h4 className="text-lg sm:text-xl font-bold text-yellow-400">
                     0xHODLER
                   </h4>
-                  <p className="text-sm text-gray-400">
+                  <p className="text-xs sm:text-sm text-gray-400">
                     The Thanos of Tokenomics
                   </p>
                 </div>
               </div>
-              <div className="space-y-2">
-                <p className="text-sm text-gray-300">
+              <div className="space-y-1 sm:space-y-2">
+                <p className="text-xs sm:text-sm text-gray-300">
                   NFTs Minted:{" "}
                   <span className="text-yellow-400 font-mono">∞</span>
                 </p>
-                <p className="text-sm text-gray-300">
+                <p className="text-xs sm:text-sm text-gray-300">
                   Last Mint: <span className="text-yellow-400">Always</span>
                 </p>
-                <p className="text-sm text-gray-300">
+                <p className="text-xs sm:text-sm text-gray-300">
                   Status: <span className="text-red-400">Inevitable</span>
                 </p>
               </div>
@@ -515,18 +513,24 @@ export default function Home() {
           </div>
 
           {/* Wallet Wars Footer */}
-          <div className="mt-12 text-center">
-            <p className="text-lg font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-400 to-yellow-400">
+          <div className="mt-8 sm:mt-12 text-center">
+            <p className="text-base sm:text-lg font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-400 to-yellow-400">
               Coming Soon: Wallet Wars
             </p>
-            <p className="text-sm text-gray-400 mt-2">
+            <p className="text-xs sm:text-sm text-gray-400 mt-2">
               Where wallets battle for the title of &quot;Most Pointless JPEG
               Collection&quot;
             </p>
-            <div className="mt-4 flex justify-center gap-4">
-              <span className="text-xs text-gray-500">⚔️ Epic Battles</span>
-              <span className="text-xs text-gray-500">🎭 Drama</span>
-              <span className="text-xs text-gray-500">💸 Zero Stakes</span>
+            <div className="mt-3 sm:mt-4 flex justify-center gap-3 sm:gap-4">
+              <span className="text-[10px] sm:text-xs text-gray-500">
+                ⚔️ Epic Battles
+              </span>
+              <span className="text-[10px] sm:text-xs text-gray-500">
+                🎭 Drama
+              </span>
+              <span className="text-[10px] sm:text-xs text-gray-500">
+                💸 Zero Stakes
+              </span>
             </div>
           </div>
         </div>
