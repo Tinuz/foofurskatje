@@ -15,9 +15,9 @@ export default function Home() {
           <Image
             src="/foofur_logo.png"
             alt="Foofur Logo"
-            width={300}
-            height={300}
-            className="mx-auto mb-6"
+            width={700}
+            height={700}
+            className="mx-auto mb-6 shadow-3xl shadow-purple-600/70 transform transition-transform duration-500 hover:scale-110 rounded-full"
           />
           <h1 className="font-orbitron text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-bold mb-4 sm:mb-6 text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 animate-gradient-x">
             $FOOF
