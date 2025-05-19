@@ -16,9 +16,8 @@ export default function Home() {
             "logo": "https://foofur.com/foofur_logo.png",
             "description": "The most pointless meme coin on Solana. Stake for nothing, earn nothing, do nothing.",
             "sameAs": [
-              "https://twitter.com/foofur",
-              "https://t.me/foofur",
-              "https://discord.gg/foofur"
+              "https://discord.gg/b3DBCbfX",
+              "https://x.com/Foofurskatje"
             ]
           }
         `}
@@ -580,6 +579,36 @@ export default function Home() {
                 </span>
               </div>
             </div>
+          </div>
+        </section>
+
+        {/* Social Media Section */}
+        <section className="py-12 sm:py-16 px-4 sm:px-6 bg-gradient-to-b from-gray-900 to-gray-800 text-white text-center relative overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-to-r from-pink-500/10 via-red-500/10 to-yellow-500/10 animate-gradient-x"></div>
+          <h2 className="font-orbitron text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-8 sm:mb-12 text-transparent bg-clip-text bg-gradient-to-r from-pink-400 via-red-500 to-yellow-400 animate-gradient-x relative z-10">
+            Join the Community
+          </h2>
+          <div className="container mx-auto flex flex-col sm:flex-row justify-center gap-6 sm:gap-12 relative z-10">
+            <a
+              href="https://discord.gg/b3DBCbfX"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center gap-2 text-lg sm:text-xl font-bold text-white hover:text-purple-400 transition-colors"
+              aria-label="Join our Discord server"
+            >
+              {/* Discord Icon Placeholder */}
+              <span>Discord</span>
+            </a>
+            <a
+              href="https://x.com/Foofurskatje"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center gap-2 text-lg sm:text-xl font-bold text-white hover:text-cyan-400 transition-colors"
+              aria-label="Follow us on X (formerly Twitter)"
+            >
+              {/* X Icon Placeholder */}
+              <span>X (Twitter)</span>
+            </a>
           </div>
         </section>
 
