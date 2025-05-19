@@ -60,7 +60,10 @@ export default function RootLayout({
         <link rel="canonical" href="https://foofur.com" />
         <meta name="theme-color" content="#4F46E5" />
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }
