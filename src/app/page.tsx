@@ -26,21 +26,26 @@ export default function Home() {
       <main className="min-h-screen bg-gray-900 text-white overflow-hidden">
         {/* Hero Section */}
         <section
-          className="relative flex items-center justify-center min-h-[90vh] sm:h-screen bg-gradient-to-br from-purple-800 via-blue-900 to-gray-900 text-center p-4 sm:p-8 overflow-hidden"
+          className="relative flex flex-col items-center justify-center min-h-[100vh] py-10 sm:py-20 bg-gradient-to-br from-purple-800 via-blue-900 to-gray-900 text-center p-4 sm:p-8 overflow-hidden"
           aria-label="Hero Section"
         >
           {/* Animated Gradient Overlay */}
-          <div className="absolute inset-0 bg-gradient-to-r from-purple-500/20 via-blue-500/20 to-pink-500/20 animate-gradient-x"></div>
-          <div className="absolute inset-0 bg-black/40 backdrop-blur-sm"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-purple-500/20 via-blue-500/20 to-pink-500/20 animate-gradient-x pointer-events-none"></div>
+          <div className="absolute inset-0 bg-black/40 backdrop-blur-sm pointer-events-none"></div>
 
-          <div className="z-10 relative w-full max-w-4xl px-2 sm:px-4">
+          <div className="z-10 relative w-full max-w-4xl flex flex-col items-center px-2 sm:px-4">
             <Image
               src="/foofur_logo.png"
               alt="$FOOF Token Logo - The Most Pointless Meme Coin on Solana"
               width={700}
               height={700}
-              className="mx-auto mb-4 sm:mb-6 shadow-[0_0_50px_rgba(147,51,234,0.7),0_0_100px_rgba(59,130,246,0.5)] transform transition-transform duration-500 hover:scale-110 rounded-full relative z-10 w-[200px] sm:w-[300px] md:w-[400px] lg:w-[500px]"
+              className="mx-auto mb-4 sm:mb-6 shadow-[0_0_50px_rgba(147,51,234,0.7),0_0_100px_rgba(59,130,246,0.5)] transition-transform duration-500 hover:scale-110 rounded-full relative z-10 w-[160px] sm:w-[220px] md:w-[320px] lg:w-[400px] h-auto"
               priority
+              style={{
+                objectFit: "contain",
+                objectPosition: "center",
+                background: "#fff",
+              }}
             />
             <h1 className="font-orbitron text-4xl sm:text-7xl md:text-8xl lg:text-9xl font-bold mb-4 sm:mb-6 text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 animate-gradient-x">
               $FOOF
