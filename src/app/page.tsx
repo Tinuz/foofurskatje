@@ -609,6 +609,16 @@ export default function Home() {
               {/* X Icon Placeholder */}
               <span>X (Twitter)</span>
             </a>
+            <a
+              href="https://t.me/+K6NUaSo7b3kxY2Fk"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center gap-2 text-lg sm:text-xl font-bold text-white hover:text-blue-400 transition-colors"
+              aria-label="Join us on Telegram"
+            >
+              {/* Telegram Icon Placeholder */}
+              <span>Telegram</span>
+            </a>
           </div>
         </section>
 
