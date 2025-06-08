@@ -119,7 +119,7 @@ export default function Home() {
               aria-label="Main Actions"
             >
               <a
-                href="https://jup.ag/swap/SOL-FOOF"
+                href="https://letsbonk.fun/token/BVMxQqAgzBaUZQaEn1V74v5dKAUQykKSSEtMJJvWbonk"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full sm:w-auto bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500 hover:from-yellow-500 hover:via-orange-600 hover:to-red-600 text-gray-900 font-bold py-2 sm:py-3 px-4 sm:px-8 rounded-full text-base sm:text-lg uppercase tracking-wide shadow-lg transform transition-all duration-300 hover:scale-105 active:scale-95 hover:shadow-orange-500/50 flex items-center justify-center gap-2"
