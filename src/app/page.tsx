@@ -595,7 +595,7 @@ export default function Home() {
           </h2>
           <div className="container mx-auto flex flex-col sm:flex-row justify-center gap-6 sm:gap-12 relative z-10">
             <a
-              href="https://discord.gg/b3DBCbfX"
+              href="https://discord.gg/yr798tdz"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center gap-2 text-lg sm:text-xl font-bold text-white hover:text-purple-400 transition-colors"
