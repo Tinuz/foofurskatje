@@ -35,7 +35,7 @@ export default function Home() {
 
           <div className="z-10 relative w-full max-w-4xl flex flex-col items-center px-2 sm:px-4">
             <Image
-              src="/foofur_logo.png"
+              src="/logo.jpg"
               alt="$FOOF Token Logo - The Most Pointless Meme Coin on Solana"
               width={700}
               height={700}
