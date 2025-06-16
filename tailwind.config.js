@@ -50,6 +50,9 @@ module.exports = {
           "50%": { transform: "translate(10px, 10px) scale(1.5)", opacity: 1 },
         },
       },
+      fontFamily: {
+        custom: ["'Press Start 2P'", "'VT323'", "monospace"],
+      },
     },
   },
   plugins: [],
