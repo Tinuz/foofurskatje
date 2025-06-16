@@ -4,8 +4,6 @@ import "./globals.css";
 import Image from "next/image";
 import { Analytics } from "@vercel/analytics/next"
 
-const inter = Inter({ subsets: ["latin"] });
-
 export const metadata: Metadata = {
   title: "$FOOF Token | The Most Pointless Meme Coin on Solana",
   description:

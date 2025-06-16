@@ -1,13 +1,11 @@
 "use client";
 
-import Image from "next/image";
 import Script from "next/script";
 import {Hero} from "@/app/components/Hero";
 import {Apps} from "@/app/components/Apps";
 import {About} from "@/app/components/About";
 import { Community } from "./components/Community";
 import { Footer } from "./components/Footer";
-
 
 export default function Home() {
   return (
