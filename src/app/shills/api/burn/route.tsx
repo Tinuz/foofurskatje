@@ -94,7 +94,7 @@ export async function POST(req: Request) {
         return NextResponse.json({ error: "Transaction failed" }, { status: 500 });
       }
     } catch (err) {
-      return NextResponse.json({ error: "Burn failed" }, { status: 500 });
+      return NextResponse.json({ error: "Burn failed", err }, { status: 500 });
     }
   } catch (err) {
     console.log("Fout bij verwerken request:", err);

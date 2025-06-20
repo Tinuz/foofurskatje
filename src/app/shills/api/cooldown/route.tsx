@@ -21,6 +21,6 @@ export async function GET(req: NextRequest) {
       nextBurnTimestamp: nextBurnTimestamp
     });
   } catch (err) {
-    return NextResponse.json({ error: "Failed to fetch cooldown" }, { status: 500 });
+    return NextResponse.json({ error: "Failed to fetch cooldown", err }, { status: 500 });
   }
 }

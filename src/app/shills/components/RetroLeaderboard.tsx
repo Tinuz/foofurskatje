@@ -1,6 +1,11 @@
 import Image from "next/image";
 
-export function RetroLeaderboard({ leaderboard }: { leaderboard: any[] }) {
+type leaderboardEntry = {
+  wallet: string;
+  count: number;
+}
+
+export function RetroLeaderboard({ leaderboard }: { leaderboard: leaderboardEntry[] }) {
   // Retro kleuren en iconen voor de top 3
   const medals = [
     { icon: "/gold-medal.png", alt: "1st", bg: "bg-[#FFD700]" },

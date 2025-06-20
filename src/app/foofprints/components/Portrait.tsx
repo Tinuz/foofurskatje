@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef } from "react";
 import Image from "next/image";
 import Agreement from "./Agreement"; // Zorg dat dit pad klopt
 
@@ -212,7 +212,7 @@ const Portrait = ({
               </div>
               {/* Thumbnails */}
               <div className="flex flex-row sm:flex-col gap-2 justify-center w-full sm:w-auto">
-                {allImages.map((img, i) => (
+                {allImages.map((img) => (
                   <button
                     key={img.src}
                     onClick={() => setMainImage(img.src)}
