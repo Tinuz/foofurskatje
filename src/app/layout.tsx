@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Image from "next/image";
 import { Analytics } from "@vercel/analytics/next"
+import SolanaProviders from "@/app/lib/SolanaProviders";
 
 export const metadata: Metadata = {
   title: "$FOOF Token | The Most Pointless Meme Coin on Solana",
@@ -71,7 +72,9 @@ export default function RootLayout({
           />
           <div className="absolute inset-0 bg-[#FDFBEA] opacity-80 -z-10" />
         </div>
+        <SolanaProviders>
         {children}
+        </SolanaProviders>
         <Analytics />
       </body>
     </html>
