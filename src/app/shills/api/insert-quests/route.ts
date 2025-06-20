@@ -84,7 +84,7 @@ export async function POST(req: NextRequest) {
 
   // Update of create user
   const userKey = `user:${wallet}`;
-  let user: User = (await kv.get<User>(userKey)) || { wallet, inserts: [] };
+  const user: User = (await kv.get<User>(userKey)) || { wallet, inserts: [] };
   user.inserts.push(insertId);
   await kv.set(userKey, user);
 

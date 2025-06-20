@@ -26,7 +26,6 @@ export default function InsertShillQuests() {
   const { publicKey, connected, signMessage } = useWallet();
   const walletAddress = publicKey ? publicKey.toBase58() : "";
 
-  const [balance, setBalance] = useState(13.37);
   const [quest, setQuest] = useState<Quest | null>(null);
   const [insertId, setInsertId] = useState<string | null>(null);
   const [proofUrl, setProofUrl] = useState("");
@@ -59,7 +58,7 @@ export default function InsertShillQuests() {
       .then((res) => res.json())
       .then((data) => setNextBurnTimestamp(data.nextBurnTimestamp))
       .catch(() => setNextBurnTimestamp(Date.now()));
-  }, [publicKey]);
+  }, [walletAddress]);
 
   // Check of er open assignments zijn (alleen voor notificatie)
   useEffect(() => {
@@ -135,7 +134,6 @@ export default function InsertShillQuests() {
     if (res.ok && data.quest) {
       setQuest(data.quest);
       setInsertId(data.insertId || null);
-      setBalance(0);
       setSubmitted(false);
     } else {
       alert(data.error || "Failed to get quest");
@@ -166,7 +164,7 @@ export default function InsertShillQuests() {
 
     if (res.ok) {
       // Daarna pas reward uitkeren
-      const rewardRes = await fetch("/shills/api/reward", {
+      await fetch("/shills/api/reward", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ wallet: walletAddress, message, signatureBase58 }),
