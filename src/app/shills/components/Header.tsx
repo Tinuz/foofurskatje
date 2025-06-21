@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import WalletConnect from './WalletConnect';
 
 type HeaderProps = {
@@ -6,17 +7,19 @@ type HeaderProps = {
   onOpenAssignmentsClick?: () => void;
 };
 
-export default function Header({hasOpenAssignments, onOpenAssignmentsClick }: HeaderProps) {
+export default function Header({ hasOpenAssignments, onOpenAssignmentsClick }: HeaderProps) {
   return (
     <header className="flex items-center justify-between py-6 px-4">
-      <Image
-        src="/logo.png"
-        alt="Logo"
-        width={60}
-        height={60}
-        className="w-[60px] h-[60px]"
-        priority
-      />
+      <Link href="/" passHref>
+        <Image
+          src="/logo.png"
+          alt="Logo"
+          width={60}
+          height={60}
+          className="w-[60px] h-[60px] cursor-pointer"
+          priority
+        />
+      </Link>
       <div className="flex items-center gap-4">
         {hasOpenAssignments && (
           <button
