@@ -41,8 +41,6 @@ export async function POST(req: Request) {
         TREASURY.publicKey //8nqTE6Fm1StHbwfnJQ5oq55a8YGKH8C2Urvn1zwVUr2o
       );
 
-      console.log("Treasury ATA:", treasuryATA.address.toBase58());
-
       const blockhash = await connection.getLatestBlockhash();
       if (!blockhash) {
         return NextResponse.json({ error: "Failed to fetch blockhash" }, { status: 500 });
@@ -64,7 +62,7 @@ export async function POST(req: Request) {
       }).compileToV0Message();
 
       const tx = new VersionedTransaction(messageV0);
-      console.log("Transaction created:", tx);
+
       try {
         tx.sign([TREASURY]);
       } catch (err) {

@@ -236,7 +236,7 @@ export default function InsertShillQuests() {
               </button>
             </div>
           ) : (
-            <div className="max-w-xl mx-auto mt-2 bg-retro-gradient border-2 border-[#d2b77c] rounded-lg shadow-retro">
+            <div className="max-w-xl mx-auto mt-2 border-2 border-[#d2b77c] rounded-lg shadow-retro bg-gradient-to-br from-[#f7e7ce] via-[#f9d77e] to-[#e6cba8]">
               <div className="p-6 relative">
                 <button
                   className="absolute top-2 right-2 text-xs px-2 py-1 bg-[#cc3d3d] text-white rounded font-retro"
