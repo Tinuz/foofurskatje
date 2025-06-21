@@ -14,7 +14,7 @@ export async function GET(req: NextRequest) {
     // Haal de cooldown timestamp op uit de KV store
     const key = `cooldown:${wallet}`;
     const lastInsert = await kv.get<number>(key);
-    const nextBurnTimestamp = lastInsert ? lastInsert + 1000 * 60 * 60 * 24 : Date.now();
+    const nextBurnTimestamp = lastInsert ? lastInsert + 1000 * 60 * 60 * 1 : Date.now();
     console.log(`Cooldown for ${wallet}: ${nextBurnTimestamp}`);
 
     return NextResponse.json({

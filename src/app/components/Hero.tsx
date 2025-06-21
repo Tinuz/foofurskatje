@@ -16,7 +16,7 @@ export function Hero() {
       <Image
         src="/logo.png"
         alt="logo"
-        className="mb-2 w-[240px] h-[240px] sm:w-[400px] sm:h-[400px] md:w-[500px] md:h-[500px] lg:w-[600px] lg:h-[600px] rounded-full"
+        className="mb-2 w-[240px] h-[240px] sm:w-[400px] sm:h-[400px] md:w-[500px] md:h-[500px] lg:w-[600px] lg:h-[600px] rounded-full cursor-pointer"
         width={240}
         height={240}
         priority
@@ -24,7 +24,6 @@ export function Hero() {
           objectFit: "contain",
           objectPosition: "center",
         }}
-        //onError={(e) => { (e.currentTarget as HTMLImageElement).style.display = 'none'; }}
       />
       <h1 className="text-4xl md:text-6xl font-bold mb-2 text-[#3A2F1B]">The token was an accident.</h1>
       <p className="text-xl md:text-2xl text-[#3A2F1B] mb-6">Everything after that? Even worse.</p>

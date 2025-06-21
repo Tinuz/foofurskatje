@@ -29,7 +29,7 @@ export async function POST(req: Request) {
     const cooldownKey = `cooldown:${wallet}`;
     const lastInsert = await kv.get<number>(cooldownKey);
     const now = Date.now();
-    if (lastInsert && now - lastInsert < 1000 * 60 * 60 * 24) {
+    if (lastInsert && now - lastInsert < 1000 * 60 * 60 * 1) {
       return NextResponse.json({ error: "Cooldown active" }, { status: 429 });
     }
 
@@ -72,7 +72,7 @@ export async function POST(req: Request) {
 
       try{
         const txid = await connection.sendTransaction(tx);
-        await kv.set(cooldownKey, now, { ex: 60 * 60 * 24 });
+        await kv.set(cooldownKey, now, { ex: 60 * 60 * 1 });
 
         // Na succesvolle burn:
         const amountBurned = 13.37;

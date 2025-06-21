@@ -17,7 +17,7 @@ export default function Home() {
             "@type": "Organization",
             "name": "$FOOF Token",
             "url": "https://foofurskatje.com",
-            "logo": "https://foofurskatje.com/foofur_logo.png",
+            "logo": "https://foofurskatje.com/logo.png",
             "description": "The most pointless meme coin on Solana. Stake for nothing, earn nothing, do nothing.",
             "sameAs": [
               "https://discord.gg/yr798tdz",

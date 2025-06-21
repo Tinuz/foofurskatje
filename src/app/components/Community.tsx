@@ -12,7 +12,7 @@ export function Community() {
         Join the chaos kennel. Discord for the barking, X for the delusion, Telegram for whatever that is.
       </p>
       <div className="flex gap-8 justify-center items-center">
-        <a href="https://discord.gg/yr798tdz" target="_blank" rel="noopener noreferrer" aria-label="Discord">
+        <a href="https://discord.gg/3jZNxc4D" target="_blank" rel="noopener noreferrer" aria-label="Discord">
           <Image
             src="/discord.png"
             alt="Discord"
