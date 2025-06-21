@@ -3,7 +3,7 @@ import Image from 'next/image';
 export function Apps() {
   const apps = [
     {
-      name: "Shill Quests",
+      name: "Shills",
       description: "Help Foofur spread the word. Get nothing in return.",
       link: "/shills",
       image: "/shills.png"
@@ -35,10 +35,12 @@ export function Apps() {
               : "bg-[#F9D77E] border-[#C19A6B]"
           ].join(" ")}
         >
-          {/* Overlay */}
-          <div className="absolute inset-0 bg-black/60 flex items-center justify-center z-10">
-            <span className="text-white text-xl font-bold font-mono tracking-widest">COMING SOON</span>
-          </div>
+          {/* Overlay alleen tonen als het NIET Shills is */}
+          {app.name !== "Shills" && (
+            <div className="absolute inset-0 bg-black/60 flex items-center justify-center z-10">
+              <span className="text-white text-xl font-bold font-mono tracking-widest">COMING SOON</span>
+            </div>
+          )}
           {/* Card content */}
           <Image
             src={app.image}

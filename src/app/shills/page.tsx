@@ -255,7 +255,7 @@ export default function InsertShillQuests() {
                 <p className="mb-4">{quest.assignment || "Perform your duty!"}</p>
                 <input
                   type="url"
-                  className="w-full px-2 py-1 mb-2 border border-[#d2b77c] rounded font-retro"
+                  className="w-full px-3 py-2 mb-2 border-2 border-[#8c6b3f] rounded-lg font-mono bg-[#F7E7CE] text-[#3A2F1B] placeholder-[#B97A57] shadow-[2px_2px_0_0_#B97A57] focus:outline-none focus:border-[#3A1C5C] focus:bg-[#fffbe8] transition"
                   placeholder="Proof URL (X post link)"
                   value={proofUrl}
                   onChange={(e) => setProofUrl(e.target.value)}
@@ -263,7 +263,7 @@ export default function InsertShillQuests() {
                   required
                 />
                 <button
-                  className="btn-retro py-3 px-8 rounded shadow transition hover:scale-105 active:scale-95 mt-2"
+                  className="btn-retro py-3 px-8 rounded shadow transition hover:scale-105 active:scale-95 mt-2 z-40"
                   style={{
                     background: "linear-gradient(90deg, #388e3c 60%, #d2b77c 100%)",
                     color: "#fffbe8",

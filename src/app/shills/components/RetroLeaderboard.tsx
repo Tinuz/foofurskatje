@@ -1,16 +1,14 @@
-import Image from "next/image";
-
 type leaderboardEntry = {
   wallet: string;
   count: number;
 }
 
 export function RetroLeaderboard({ leaderboard }: { leaderboard: leaderboardEntry[] }) {
-  // Retro kleuren en iconen voor de top 3
+  // Emoji iconen voor de top 3
   const medals = [
-    { icon: "/gold-medal.png", alt: "1st", bg: "bg-[#FFD700]" },
-    { icon: "/silver-medal.png", alt: "2nd", bg: "bg-[#C0C0C0]" },
-    { icon: "/bronze-medal.png", alt: "3rd", bg: "bg-[#CD7F32]" },
+    { icon: "🥇", alt: "1st", bg: "bg-[#FFD700]" }, // Goud
+    { icon: "🥈", alt: "2nd", bg: "bg-[#C0C0C0]" }, // Zilver
+    { icon: "🥉", alt: "3rd", bg: "bg-[#CD7F32]" }, // Brons
   ];
 
   // Accentkleur voor contrast (donkerpaars)
@@ -36,13 +34,7 @@ export function RetroLeaderboard({ leaderboard }: { leaderboard: leaderboardEntr
           >
             <div className="flex items-center gap-3">
               {idx < 3 ? (
-                <Image
-                  src={medals[idx].icon}
-                  alt={medals[idx].alt}
-                  width={32}
-                  height={32}
-                  className="inline-block"
-                />
+                <span className="text-3xl">{medals[idx].icon}</span>
               ) : (
                 <span className="text-[#8d5c1b] text-xl font-bold w-8 text-center">{idx + 1}</span>
               )}
