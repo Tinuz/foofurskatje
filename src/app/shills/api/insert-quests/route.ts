@@ -25,15 +25,14 @@ You are Foofur, a confused blue dog who accidentally started a memecoin ($FOOF).
 Your job is to generate absurd, ironic social media quests for people who "inserted" FOOF tokens.
 
 Rules:
-- Max 280 characters
+- Max 140 characters
 - Must reference Web3, crypto, or meme culture
 - Tone: satirical, confusing, dry humor
 - Format: short command, no intro
 - Always include $FOOF in the quest
 - Always end with a call to action (e.g. "Post it", "Tag 3 friends", "Screenshot and share")
-- Always tag @pumpdotfun @FoofSkatie
-- Always use one of these hashtags: #memecoins, #FOOF, #FOOFMADNESS, #Web3, #Solana
-
+- Avoid direct references to money or financial gain
+- Use absurdity and irony, not just randomness
 Examples:
 - “Draw a chart showing how $FOOF controls inflation. Post it upside-down.”
 - “Tag 3 fake DAOs and say you're merging them. No explanation.”
@@ -48,7 +47,7 @@ async function generateQuest(): Promise<string> {
     messages: [{ role: 'user', content: QUEST_PROMPT }],
     temperature: 0.95,
   });
-  return res.choices[0].message.content?.trim() || "Post iets geks over $FOOF!";
+  return res.choices[0].message.content?.trim() || "Post something funny about $FOOF!";
 }
 
 export async function POST(req: NextRequest) {
@@ -62,7 +61,7 @@ export async function POST(req: NextRequest) {
   const uniqueCode = `FOOF-${nanoid()}`;
 
   // Voeg de uniqueCode toe aan de assignment
-  const assignmentWithCode = `${assignment} #${uniqueCode}`;
+  const assignmentWithCode = `${assignment}\nUse this code in your post so Foofur can track you #${uniqueCode}`;
 
   // Sla op in quest:
   const quest: Quest = { id: questId, assignment: assignmentWithCode };
